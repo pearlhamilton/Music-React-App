@@ -1,0 +1,18 @@
+img{
+    height: 200px;
+    width: 200px;
+}
+
+table{
+    margin:auto;
+    width:70%;
+    
+
+}
+
+td{
+    text-align: center;
+    background-color: aquamarine;
+    width: 30%;
+}
+

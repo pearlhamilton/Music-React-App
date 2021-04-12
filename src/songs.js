@@ -1,4 +1,5 @@
 import React from 'react'
+import './styles/songs.css'
 
 const Songs = () => {
     return ( 
