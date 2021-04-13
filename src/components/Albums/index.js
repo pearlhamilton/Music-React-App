@@ -12,20 +12,20 @@ const Albums = () => {
 
     const albumCards = [];
         for (let i = 0; i< album.length; i++){
-            let temp = <Card album = {album[i]}/> 
+            let temp = <Card key={`album-${i}`} album = {album[i]}/> 
             albumCards.push(temp)
         
             
         }
 
         return(
-            <>
+            <div class="card-div">
 
-            {albumCards}
+                {albumCards}
 
 
 
-            </>
+            </div>
         )
         // <table>
         //     <tr>
