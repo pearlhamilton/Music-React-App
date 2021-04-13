@@ -1,5 +1,6 @@
 import React from 'react'
 import {Like} from '..'
+import './style.css'
 
 
 const Card = (props) => {
@@ -9,6 +10,7 @@ const Card = (props) => {
         <h3>{props.album.name}</h3>
         <h4>{props.album.date}</h4>
         <img src={props.album.coverArt}/>
+        <br></br>
         <Like />
     
     </div>

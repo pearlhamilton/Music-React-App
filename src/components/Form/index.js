@@ -1,4 +1,5 @@
 import React, { useState } from 'react'; 
+import './style.css'
 
 const Form = () => {
 
@@ -21,13 +22,13 @@ const Form = () => {
 
 
     return (
-        <>
-        <form role="form" onSubmit={handleFormSubmit}>
-            <input type="text" id="artist-name" name="artist-name" placeholder="Enter your favourite artist name" value={artistNameInput} onChange={handleInput}/>
-            <input type="submit" value="Update!"/>
-        </form>
-        <h2>{artistName? artistName : ""}</h2>
-        </>
+        <div class="form">
+            <form role="form" onSubmit={handleFormSubmit}>
+                <input type="text" id="artist-name" name="artist-name" placeholder="Enter your favourite artist name" value={artistNameInput} onChange={handleInput}/>
+                <input type="submit" value="Update!"/>
+            </form>
+            <h2>{artistName? artistName : ""}</h2>
+        </div>
     )
 
 }
