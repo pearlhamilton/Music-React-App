@@ -1,6 +1,6 @@
 import { screen, render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Like from '../likeBtn';
+import Like from '.';
 import userEvent from '@testing-library/user-event';
 
 describe('Like button', () => {

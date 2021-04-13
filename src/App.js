@@ -1,17 +1,10 @@
 import React from 'react'
-import Artist from './artist'
-import Songs from './songs'
-import './styles/style.css'
+import { About } from './pages'
 
 const App = () => {
 return(
-<> 
-    <Artist />
-    <Songs />
-    
-
- </>
-)
+    < About />
+    )
 }
 
 export default App

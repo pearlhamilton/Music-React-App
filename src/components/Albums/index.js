@@ -1,8 +1,9 @@
 import React from 'react'
-import './styles/songs.css'
-import Like from './likeBtn.js'
 
-const Songs = () => {
+import './style.css'
+import {Like} from '..'
+
+const Albums = () => {
     return ( 
         <table>
             <tr>
@@ -30,4 +31,4 @@ const Songs = () => {
     )
 }
 
-export default Songs
+export default Albums
