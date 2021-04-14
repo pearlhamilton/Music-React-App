@@ -1,15 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 
+:root{
+    --pink: #FEB9B9;
+    --dark: #3A4164;
+    --white: #FEF7F2;
+}
+
 h2, p{
     text-align: center;
 
 }
 
 body{
+    color:var(--white);
+
     width: 90%;
-    background-color:whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px auto;
+
+    background: #DE6262;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFB88C, #DE6262);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .musictype{
@@ -19,6 +31,7 @@ body{
 }
 
 h2{
+    
     margin-top: 25px;
     font-size: 2rem;
     text-transform: uppercase;
@@ -50,12 +63,13 @@ h4{
     margin: 20px 10%;
 }
 .card span {
-    text-shadow:1px 0px 1px black, 0 0 1px grey, 0 0 1px grey;
-    color: rgba(188, 227, 240, 0.582);
+    text-shadow:1px 0px 1px grey, 0 0 1px grey, 0 0 1px grey;
+    color: rgba(250, 250, 250, 0.582);
     font-size: 30px;
     margin: -10px 0px;
 }
 span.liked{
     /* fill-rule: evenodd; */
-    color:crimson;
+    color:#d15959;
+    text-shadow: none;
 }
