@@ -1,9 +1,13 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './style.css'
 import {Like} from '..'
 
 
 const ArtistCard = (props) => {
+
+    useEffect(() => {
+        console.log('I have rendered')
+    })
 
     return(
         <div class="artistCard">
