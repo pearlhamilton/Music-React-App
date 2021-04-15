@@ -1,4 +1,5 @@
 import React, { useState } from 'react'; 
+import './style.css'
 
 const likeBtn = () => {
     const [like, setLike] = useState(true); 
