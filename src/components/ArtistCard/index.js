@@ -5,7 +5,7 @@ import {Like, Albums} from '..'
 
 const ArtistCard = (props) => {
     const albums = [['Come and Take it all', 'Crossing the threshold', 'The free-the will'], 
-                    ['Birdy','Young Heart','Beautiful Lies'], ['PlEINE LUNE', 'PLEINE LUNE 2'], ['I forget where we were', 'Noonday Dream']
+                    ['Birdy','Young Heart','Beautiful Lies'], ['PlEINE LUNE', 'PLEINE LUNE 2'], ['I forget where we were', 'Noonday Dream'],['test','test']
                 ]
 
     const[moreInfo, setmoreInfo] = useState(false)
@@ -20,22 +20,23 @@ const ArtistCard = (props) => {
 
     return(
         <div className="artistCard">
-        <h5 onClick={() => showmore()}>{props.name}</h5>
+            <div className="artist">
+        <h2 onClick={() => showmore()}>{props.name}</h2>
         <img src={props.artistImg}/>
-        <p>{props.id}</p>
         <Like/>
         <Albums albums ={albums[(props.id)-1]}/>
+        </div>
         </div>
     )
     }
     else{
         return(
         <div className="artistCard">
-        <h5 onClick={() => showmore()}>{props.name}</h5>
-        <img src={props.artistImg}/>
-        <p>{props.id}</p>
-        <Like/>
-
+            <div className="artist">
+                <h2 onClick={() => showmore()}>{props.name}</h2>
+                <img src={props.artistImg}/>
+                <Like/>
+            </div>
         </div>
 
         )

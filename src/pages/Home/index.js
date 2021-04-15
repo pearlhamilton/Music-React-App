@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { Lyrics } from '../../components'
+import { Lyrics,BackButton } from '../../components'
 import { Nav } from '../../layout'
 import './style.css'
 
@@ -9,6 +9,7 @@ const Home = () => {
 
     return(
         <main>
+            <BackButton/>
             <h1>ZenMode</h1>
             <h2>made with React</h2>
             <Nav />

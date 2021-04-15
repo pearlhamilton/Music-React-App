@@ -26,7 +26,7 @@ const Lyrics = () => {
                 setLyrics({lyrics: `Cannot fetch  lyrics! ${err}`})
             }
         }
-        // getLyrics();
+        getLyrics();
 
         const interval = setInterval(getLyrics, 3000);
 

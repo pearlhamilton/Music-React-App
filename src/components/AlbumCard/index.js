@@ -1,22 +1,14 @@
-import React, { useState } from 'react';
-import Albums from '../Albums';
-
+import React from 'react';
+import './style.css'
 
 const AlbumCard = (props) => {
-  
 
         return(
-     
-            <div>
-
-             {props.album}
-
-
-
+            <div className = "albumCard">
+                 {props.album}
+                 <p>Listen</p>
             </div>
         )
 
 }
-
-
 export default AlbumCard

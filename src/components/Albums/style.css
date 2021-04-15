@@ -3,6 +3,12 @@ img{
     width: 200px;
 }
 .card-div{
+    height: 300px;
     display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    background-color:   rgb(192, 179, 191);
+    margin-top: 20px;
+    border-radius: 20px;
 }
 

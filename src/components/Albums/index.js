@@ -17,18 +17,13 @@ const Albums = (props) => {
         for (let i = 0; i< album.length; i++){
             let temp = <AlbumCard key={`album-${i}`} album = {album[i]}/> 
             console.log(temp)
-            albumCards.push(temp)
-        
-            
+            albumCards.push(temp)       
         }
 
         return(
             <div className="card-div">
 
                 {albumCards}
-
-                I am a card
-
 
 
             </div>

@@ -19,7 +19,7 @@ const likeBtn = () => {
 
     return (
     <>
-        <span onClick={handleLike}>&#10084;</span>
+        <p className = "Heart" onClick={handleLike}>&#10084;</p>
     </>
     )
 };

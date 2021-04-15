@@ -6,7 +6,11 @@ import './style.css'
 
 const Artists = () => {
 
-    const artists = [{ id: 1, name: "Black Coffee", artistImg:"https://www.ravejungle.com/wp-content/uploads/2018/11/black-coffee.jpg"}, {id:2, name: "Birdy", artistImg:"https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Birdy_%28Birdy_album%29.png/220px-Birdy_%28Birdy_album%29.png"}, {id: 3, name: "Sofiane Pamart", artistImg: "https://herbertmag.com/wp-content/uploads/2020/11/Sofiane-final-scaled.jpg"}, {id:4, name: "Ben Howard", artistImg:"https://www.nme.com/wp-content/uploads/2021/01/BEN-HOWARD-2021.jpg"}]
+    const artists = [{ id: 1, name: "Black Coffee", artistImg:"https://www.ravejungle.com/wp-content/uploads/2018/11/black-coffee.jpg"}, 
+    {id:2, name: "Birdy", artistImg:"https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Birdy_%28Birdy_album%29.png/220px-Birdy_%28Birdy_album%29.png"}, 
+    {id: 3, name: "Sofiane Pamart", artistImg: "https://herbertmag.com/wp-content/uploads/2020/11/Sofiane-final-scaled.jpg"},
+     {id:4, name: "Ben Howard", artistImg:"https://www.nme.com/wp-content/uploads/2021/01/BEN-HOWARD-2021.jpg"},
+    {id:5, name: 'test'}]
 
  return (
 
@@ -16,6 +20,8 @@ const Artists = () => {
         {/* <p class="musictype">Classical and Hiphop</p>
         <p> Sofiane Pamart is a French pianist, based in Paris and originally from Hellemmes in the suburbs of Lille. He is known to the French public for breaking the elitist codes of classical piano. A gold medallist at the Conservatoire de Lille, he took a different track to the typical classical music path.</p>
         <Albums/> */}
+        <p>Click on the artist name to see and play their albums</p>
+
         <div className="artists">
             {artists.map(artist => 
                 <ArtistCard key={ artist.id} id = {artist.id} name={artist.name} artistImg={artist.artistImg}/>)}
