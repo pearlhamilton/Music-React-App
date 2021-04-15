@@ -21,7 +21,7 @@ const ArtistCard = (props) => {
     return(
         <div className="artistCard">
             <div className="artist">
-        <h2 onClick={() => showmore()}>{props.name}</h2>
+        <h2 onClick={showmore}>{props.name}</h2>
         <img src={props.artistImg}/>
         <Like/>
         <Albums albums ={albums[(props.id)-1]}/>
@@ -33,7 +33,7 @@ const ArtistCard = (props) => {
         return(
         <div className="artistCard">
             <div className="artist">
-                <h2 onClick={() => showmore()}>{props.name}</h2>
+                <h2 onClick={showmore}>{props.name}</h2>
                 <img src={props.artistImg}/>
                 <Like/>
             </div>
