@@ -14,24 +14,24 @@ const Lyrics = () => {
         return `${song.artist}/${song.song}`
     }
 
-    // useEffect( () => {
-    //     async function getLyrics(){
-    //         try{
-    //             let query = randomSong();
-    //             let { data } = await axios.get(`https://api.lyrics.ovh/v1/${query}`);
-    //             setLyrics(data);
+    useEffect( () => {
+        async function getLyrics(){
+            try{
+                let query = randomSong();
+                let { data } = await axios.get(`https://api.lyrics.ovh/v1/${query}`);
+                setLyrics(data);
     
-    //         } catch (err){
+            } catch (err){
                 
-    //             setLyrics({lyrics: `Cannot fetch  lyrics! ${err}`})
-    //         }
-    //     }
-    //     // getLyrics();
+                setLyrics({lyrics: `Cannot fetch  lyrics! ${err}`})
+            }
+        }
+        // getLyrics();
 
-    //     const interval = setInterval(getLyrics, 3000);
+        const interval = setInterval(getLyrics, 3000);
 
-    //     // return () => clearInterval(interval)
-    // },[])
+        return () => clearInterval(interval)
+    },[])
 
   
 
