@@ -27,7 +27,8 @@ text-align: center;
 }
 
 #lovemusic{
-    margin-top: 50px;
+    margin: 50px 0px;
+    font-size: 1rem;
 }
 
 
@@ -49,12 +50,4 @@ h2{
 
 }
 
-nav{
-    /* grid-row: 3/span 1; */
-    grid-column: 3/ span 4;
-}
-
-h3, p, .lyrics-div{
-    grid-column: 2/ span 10;
-}
-
+h3{font-size: 1.5rem;}
