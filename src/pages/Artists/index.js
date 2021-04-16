@@ -1,5 +1,5 @@
 import React from 'react'
-import { Albums, ArtistCard} from '../../components'
+import { Albums, ArtistCard, BackButton} from '../../components'
 import { Header} from '../../layout'
 import './style.css'
 
@@ -26,6 +26,9 @@ const Artists = () => {
             {artists.map(artist => 
                 <ArtistCard key={ artist.id} id = {artist.id} name={artist.name} artistImg={artist.artistImg} albums ={artist.Albums}/>)}
                 {/* I could wite <ArtistCard {...artist}/>*/}
+        </div>
+        <div className="buttonContainer">
+        <BackButton />
         </div>
 
      
