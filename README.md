@@ -1,4 +1,4 @@
 # ZenMode 
 
-#A music app to practice React. 
+# A music app to practice React. 
 
