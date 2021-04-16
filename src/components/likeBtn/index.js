@@ -18,7 +18,7 @@ const likeBtn = () => {
 
 
     return (
-        <p onClick={handleLike}>&#10084;</p>
+        <p className="heart" onClick={handleLike}>&#10084;</p>
 
     )
 };

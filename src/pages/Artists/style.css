@@ -4,7 +4,9 @@
     flex-wrap: wrap;
 }
 
-
+#ArtistHeader{
+    margin: 0px;
+}
 
 p{
     text-align: center;

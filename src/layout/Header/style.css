@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+
+.logo{
+    font-family: 'Dela Gothic One', cursive;
+    margin-top: 20px;
+    font-size: 2rem;
+    margin-left: 25px;
+}

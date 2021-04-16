@@ -37,7 +37,6 @@ const Lyrics = () => {
 
     return (
         <div id="lyrics-div">
-            <h4>A song guesser game is coming soon!</h4>
             {lyrics &&
             <p>{ lyrics.lyrics }</p> }
         </div>
