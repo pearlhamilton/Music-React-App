@@ -28,14 +28,15 @@ const Lyrics = () => {
         }
         getLyrics();
 
-        const interval = setInterval(getLyrics, 8000);
+        const interval = setInterval(getLyrics, 3000);
 
-        // return () => clearInterval(interval)
-    }, [])
+        return () => clearInterval(interval)
+    },[])
+
+  
 
     return (
         <div id="lyrics-div">
-            <h4>A song guesser game is coming soon!</h4>
             {lyrics &&
             <p>{ lyrics.lyrics }</p> }
         </div>

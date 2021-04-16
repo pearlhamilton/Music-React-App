@@ -18,9 +18,8 @@ const likeBtn = () => {
 
 
     return (
-    <>
-        <span onClick={handleLike}>&#10084;</span>
-    </>
+        <p className="heart" onClick={handleLike}>&#10084;</p>
+
     )
 };
 

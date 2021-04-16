@@ -22,7 +22,7 @@ const Form = () => {
 
 
     return (
-        <div class="form">
+        <div className="form">
             <form role="form" onSubmit={handleFormSubmit}>
                 <input type="text" id="artist-name" name="artist-name" placeholder="Enter your favourite artist name" value={artistNameInput} onChange={handleInput}/>
                 <input type="submit" value="Update!"/>
