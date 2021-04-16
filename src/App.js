@@ -1,18 +1,17 @@
 import React from 'react'
-import Artist from './artist'
-import Songs from './songs'
-import './styles/style.css'
+import { Artists, Home, Reviews } from './pages'
+import { Switch, Route } from 'react-router-dom';
+
 
 const App = () => {
-return(
-<> 
-    <Artist />
-    <Songs />
-    
-
- </>
-
-)
+    return(
+        <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/artists" component={Artists} />
+                <Route path="/reviews" component={Reviews} />
+                <Route render={() => <h1 id="notFound">Sorry...Not Found!</h1>} />
+        </Switch>
+        )
 }
 
 export default App

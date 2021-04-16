@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+
+body{
+    color:var(--white);
+
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px auto;
+
+    background: #DE6262;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFB88C, #DE6262);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+
+main{
+    /* display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px; */
+    /* grid-template-rows: repeat(12, 1fr); */
+
+text-align: center;
+
+}
+
+#lovemusic{
+    margin: 50px 0px;
+    font-size: 1rem;
+}
+
+
+h1{
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 8rem;
+    text-align: center;
+    margin: 60px 0 0 0;
+    /* grid-row: 1/span 1; */
+    grid-column: 3/ span 4;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: -10px 0 20px 0;
+    /* grid-row: 2/span 1; */
+    grid-column: 5/ span 3;
+    
+
+}
+
+h3{font-size: 1.5rem;}

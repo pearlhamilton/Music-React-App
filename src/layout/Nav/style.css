@@ -1,0 +1,12 @@
+nav{
+    display:flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: 0px auto;
+
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    font-size: 1.1rem;
+}

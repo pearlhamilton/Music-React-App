@@ -1,0 +1,15 @@
+.spotify{
+    width:30px;
+    height:30px;
+}
+
+.albumCard{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+p{
+    font-size: 15px;
+    margin: 10px;
+}
